@@ -175,7 +175,7 @@ public class BlockPortalUnderWorld extends BlockContainer {
                         }
                     }
 
-                    BlockPos spawn = findPortal(dest, tile.destX, tile.destZ);
+                    BlockPos spawn = findSpawnLocation(dest, tile.destX, tile.destY, tile.destZ);
 
                     if (spawn == null) {
                         player.addChatComponentMessage(new ChatComponentTranslation("uie.chat.portal_blocked"));
